@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans Gujarati', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .font-mono-nums {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes sirenFlashRed {
+  0%, 100% { opacity: 0.15; filter: drop-shadow(0 0 0px #ef4444); }
+  50% { opacity: 1; filter: drop-shadow(0 0 16px #ef4444); }
+}
+
+@keyframes sirenFlashBlue {
+  0%, 100% { opacity: 1; filter: drop-shadow(0 0 16px #3b82f6); }
+  50% { opacity: 0.15; filter: drop-shadow(0 0 0px #3b82f6); }
+}
+
+@keyframes radarSweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes emergencyPulse {
+  0% { transform: scale(0.98); opacity: 0.8; }
+  50% { transform: scale(1.02); opacity: 1; }
+  100% { transform: scale(0.98); opacity: 0.8; }
+}
+
+.animate-siren-red {
+  animation: sirenFlashRed 0.6s infinite ease-in-out;
+}
+
+.animate-siren-blue {
+  animation: sirenFlashBlue 0.6s infinite ease-in-out;
+}
+
+.animate-radar {
+  animation: radarSweep 4s linear infinite;
+}
+
+.animate-emergency-pulse {
+  animation: emergencyPulse 1.2s ease-in-out infinite;
+}

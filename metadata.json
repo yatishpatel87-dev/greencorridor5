@@ -1,0 +1,8 @@
+{
+  "name": "Remix આપત માર્ગ - 108 Emergency Corridor",
+  "description": "ગુજરાત ઇમરજન્સી એમ્બ્યુલન્સ ગ્રીન કોરિડોર અને રિયલ-ટાઇમ પ્રાયોરિટી એલર્ટ સિસ્ટમ - Real-time siren alerts, route prioritization, traffic signal preemption, and lane clearance for drivers and emergency responders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
